@@ -135,7 +135,7 @@ public class Person {
     }
     
     func toString() -> String {
-        return String("[Person: firstName:\(firstName) lastName:\(lastName) age:\(age) job:\(job) spouse:\(spouse)]")
+        return "[Person: firstName:\(firstName) lastName:\(lastName) age:\(age) job:\(String(describing: self.job?.type)) spouse:\(String(describing: self.spouse?.firstName))]"
     }
 }
 
